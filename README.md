@@ -5,7 +5,6 @@
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ![Python versions](https://img.shields.io/badge/python-3.7|3.8|3.9|3.10|3.11-orange)
 ![TensorFlow version](https://img.shields.io/badge/tensorflowquantum-2.11-green)
-![Downloads](https://img.shields.io/pypi/dm/tfq-finance)
 [![Coverage Status](https://coveralls.io/repos/github/jialuechen/tfq-finance/badge.svg?branch=main)](https://coveralls.io/github/jialuechen/tfq-finance?branch=main)
 [![Documentation Status](https://readthedocs.org/projects/tfq-finance/badge/?version=latest)](https://tfq-finance.readthedocs.io/en/latest/?badge=latest)
 
