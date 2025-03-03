@@ -1,0 +1,125 @@
+# config.yaml - 系统配置文件示例
+
+# 系统基础配置
+system:
+  name: QuantTrading
+  log_level: info
+  log_file: logs/system.log
+
+# 消息总线配置
+message_bus:
+  publisher_endpoint: tcp://*:5555
+  subscriber_endpoint: tcp://localhost:5555
+  
+# 服务管理器配置
+service_manager:
+  id: service_manager
+  heartbeat_interval_ms: 1000
+
+# 交易所配置
+exchanges:
+  - name: Exchange1
+    host: exchange1.example.com
+    port: 9001
+    sender_comp_id: QUANT_TRADER
+    target_comp_id: EXCHANGE1
+    username: trader1
+    password: password
+    fix_version: FIX.4.4
+    heartbeat_interval: 30
+    reset_seq_num: true
+    symbols:
+      - AAPL
+      - MSFT
+      - GOOGL
+      
+  - name: Exchange2
+    host: exchange2.example.com
+    port: 9002
+    sender_comp_id: QUANT_TRADER
+    target_comp_id: EXCHANGE2
+    username: trader2
+    password: password
+    fix_version: FIX.4.4
+    heartbeat_interval: 30
+    reset_seq_num: true
+    symbols:
+      - 600000.SH
+      - 000001.SZ
+
+# 数据源配置
+data_sources:
+  - type: fix
+    endpoint: tcp://marketdata.example.com:8001
+    parameters:
+      username: marketdata_user
+      password: password
+      symbols: AAPL,MSFT,GOOGL
+      
+  - type: websocket
+    endpoint: wss://realtime.example.com/feed
+    parameters:
+      api_key: your_api_key
+      subscription: level2
+      symbols: 600000.SH,000001.SZ
+
+# 策略配置
+strategies:
+  - id: sma_crossover_1
+    type: sma_crossover
+    symbol: AAPL
+    active: true
+    parameters:
+      fast_period: 10
+      slow_period: 30
+      trade_size: 100
+      max_positions: 1
+      
+  - id: market_making_1
+    type: market_making
+    symbol: MSFT
+    active: true
+    parameters:
+      min_spread: 0.02
+      max_position: 1000
+      position_limit: 5000
+      order_size: 100
+      
+  - id: trend_following_1
+    type: trend_following
+    symbol: GOOGL
+    active: false
+    parameters:
+      lookback_period: 20
+      volatility_factor: 0.5
+      position_size_pct: 0.1
+
+# 风控配置
+risk_management:
+  max_order_value: 100000
+  max_daily_loss: 50000
+  max_position_value: 500000
+  max_order_quantity: 10000
+  max_open_orders: 50
+  
+# 性能配置
+performance:
+  order_book_queue_size: 10000
+  message_queue_size: 50000
+  thread_pool_size: 8
+  
+# 数据库配置
+database:
+  type: postgresql
+  host: localhost
+  port: 5432
+  database: quant_trading
+  username: quant_user
+  password: password
+  
+# 日志配置
+logging:
+  console_level: info
+  file_level: debug
+  max_file_size_mb: 10
+  max_files: 10
