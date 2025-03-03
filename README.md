@@ -4,7 +4,7 @@ TradeZen is a high-performance, professional-grade quantitative trading platform
 
 ## System Architecture
 
-![Quantitative Trading Platform System Architecture](assets/architecture.svg)
+![Algorithmic Trading Platform System Architecture](assets/architecture.png)
 
 The platform consists of five key layers:
 
