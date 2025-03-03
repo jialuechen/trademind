@@ -1,22 +1,22 @@
-# config.yaml - 系统配置文件示例
+# config.yaml - Example system configuration file
 
-# 系统基础配置
+# System basic configuration
 system:
   name: QuantTrading
   log_level: info
   log_file: logs/system.log
 
-# 消息总线配置
+# Message bus configuration
 message_bus:
   publisher_endpoint: tcp://*:5555
   subscriber_endpoint: tcp://localhost:5555
   
-# 服务管理器配置
+# Service manager configuration
 service_manager:
   id: service_manager
   heartbeat_interval_ms: 1000
 
-# 交易所配置
+# Exchange configuration
 exchanges:
   - name: Exchange1
     host: exchange1.example.com
@@ -47,7 +47,7 @@ exchanges:
       - 600000.SH
       - 000001.SZ
 
-# 数据源配置
+# Data source configuration
 data_sources:
   - type: fix
     endpoint: tcp://marketdata.example.com:8001
@@ -63,7 +63,7 @@ data_sources:
       subscription: level2
       symbols: 600000.SH,000001.SZ
 
-# 策略配置
+# Strategy configuration
 strategies:
   - id: sma_crossover_1
     type: sma_crossover
@@ -94,7 +94,7 @@ strategies:
       volatility_factor: 0.5
       position_size_pct: 0.1
 
-# 风控配置
+# Risk management configuration
 risk_management:
   max_order_value: 100000
   max_daily_loss: 50000
@@ -102,13 +102,13 @@ risk_management:
   max_order_quantity: 10000
   max_open_orders: 50
   
-# 性能配置
+# Performance configuration
 performance:
   order_book_queue_size: 10000
   message_queue_size: 50000
   thread_pool_size: 8
   
-# 数据库配置
+# Database configuration
 database:
   type: postgresql
   host: localhost
@@ -117,7 +117,7 @@ database:
   username: quant_user
   password: password
   
-# 日志配置
+# Logging configuration
 logging:
   console_level: info
   file_level: debug
