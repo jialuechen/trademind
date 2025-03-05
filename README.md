@@ -64,7 +64,7 @@ All these components are supported by a robust **Distributed Infrastructure** la
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/tradezen.git
+   git clone https://github.com/jialuechen/tradezen.git
    cd tradezen
    ```
 
