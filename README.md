@@ -1,4 +1,4 @@
-# TradeZen: Professional Quantitative Trading Platform
+# TradeZen: An Algorithmic Trading Framework
 
 TradeZen is a high-performance, professional-grade quantitative trading platform designed for algorithmic trading, with a focus on low-latency execution, advanced strategy development, and real-time market microstructure visualization analysis.
 
