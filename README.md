@@ -1,6 +1,6 @@
-# TradeZen: An Algorithmic Trading Framework
+# TradeMind: An Algorithmic Trading Framework
 
-TradeZen is a high-performance, professional-grade quantitative trading platform designed for algorithmic trading, with a focus on low-latency execution, advanced strategy development, and real-time market microstructure visualization analysis.
+TradeMind is a high-performance, professional-grade quantitative trading platform designed for algorithmic trading, with a focus on low-latency execution, advanced strategy development, and real-time market microstructure visualization analysis.
 
 ## System Architecture
 
@@ -64,8 +64,8 @@ All these components are supported by a robust **Distributed Infrastructure** la
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/jialuechen/tradezen.git
-   cd tradezen
+   git clone https://github.com/jialuechen/trademind.git
+   cd trademind
    ```
 
 2. Build the C++ components:
@@ -98,18 +98,18 @@ Example configuration is provided in `config/config.yaml`.
 To start the platform with default settings:
 
 ```bash
-./bin/tradezen
+./bin/trademind
 ```
 
 To specify a custom configuration file:
 
 ```bash
-./bin/tradezen --config /path/to/custom_config.yaml
+./bin/trademind --config /path/to/custom_config.yaml
 ```
 
 ## Strategy Development
 
-TradeZen provides a powerful Python API for developing trading strategies. Here's a minimal example:
+TradeMind provides a powerful Python API for developing trading strategies. Here's a minimal example:
 
 ```python
 from pyquant import Strategy, Context, OrderSide, OrderType
@@ -182,7 +182,7 @@ visualizer.generate_report(results)
 
 ## Parameter Optimization
 
-TradeZen includes tools for strategy parameter optimization:
+TradeMind includes tools for strategy parameter optimization:
 
 ```python
 from pyquant import StrategyOptimizer
@@ -210,7 +210,7 @@ print(f"Best parameters: {best_params}")
 
 ## Distributed Deployment
 
-For production environments, TradeZen can be deployed as a distributed system using Docker and Kubernetes:
+For production environments, TradeMind can be deployed as a distributed system using Docker and Kubernetes:
 
 ```bash
 cd docker
@@ -220,7 +220,7 @@ docker-compose up -d
 For Kubernetes deployment:
 
 ```bash
-kubectl apply -f kubernetes/tradezen.yaml
+kubectl apply -f kubernetes/trademind.yaml
 ```
 
 ## Contributing
