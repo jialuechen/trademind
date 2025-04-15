@@ -1,4 +1,4 @@
-# TradeMind: An Algorithmic Trading Framework
+# TradeMind: C++ Algorithmic Trading Framework
 
 TradeMind is a high-performance, professional-grade quantitative trading platform designed for algorithmic trading, with a focus on low-latency execution, advanced strategy development, and real-time market microstructure visualization analysis.
 
